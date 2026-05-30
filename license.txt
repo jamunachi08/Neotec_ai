@@ -1,0 +1,2 @@
+Neotec AI Operator
+Licensed under GNU GPL-3.0 (required, because it builds on the GPL-3.0 Frappe/ERPNext platform).

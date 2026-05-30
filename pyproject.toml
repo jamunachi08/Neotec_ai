@@ -1,0 +1,15 @@
+[project]
+name = "neotec_ai"
+authors = [{ name = "Neotec", email = "dev@neotec.example" }]
+description = "Neotec AI Operator for ERPNext — configuration-driven AI reporting and advisory."
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = ["requests"]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "neotec_ai"

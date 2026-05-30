@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "operation_type", "status", "user", "model_used", "duration_ms",
+  "request", "generated_plan", "result_summary", "error"
+ ],
+ "fields": [
+  {"fieldname": "operation_type", "fieldtype": "Select", "label": "Operation", "options": "Report\nAdvisory\nQuery\nConnection Test", "in_list_view": 1},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Success\nError\nBlocked", "in_list_view": 1},
+  {"fieldname": "user", "fieldtype": "Link", "label": "User", "options": "User", "in_list_view": 1},
+  {"fieldname": "model_used", "fieldtype": "Data", "label": "Model"},
+  {"fieldname": "duration_ms", "fieldtype": "Int", "label": "Duration (ms)"},
+  {"fieldname": "request", "fieldtype": "Long Text", "label": "Request"},
+  {"fieldname": "generated_plan", "fieldtype": "Code", "label": "Generated Query Plan", "options": "JSON"},
+  {"fieldname": "result_summary", "fieldtype": "Long Text", "label": "Result Summary"},
+  {"fieldname": "error", "fieldtype": "Long Text", "label": "Error"}
+ ],
+ "modified": "2026-01-01 00:00:00",
+ "module": "Neotec AI",
+ "name": "Neotec Operation Log",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "create": 1, "delete": 1}
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC"
+}

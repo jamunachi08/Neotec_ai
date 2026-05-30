@@ -1,0 +1,34 @@
+{
+ "actions": [],
+ "autoname": "format:NSR-{#####}",
+ "creation": "2026-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title", "result_type", "question", "col1", "owner_user", "created_on",
+  "sec_content", "report_content", "data_snapshot", "dashboard_spec", "query_plan"
+ ],
+ "fields": [
+  {"fieldname": "title", "fieldtype": "Data", "label": "Title", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "result_type", "fieldtype": "Select", "label": "Type", "options": "Solution\nReport\nDashboard", "in_list_view": 1},
+  {"fieldname": "question", "fieldtype": "Small Text", "label": "Original Query"},
+  {"fieldname": "col1", "fieldtype": "Column Break"},
+  {"fieldname": "owner_user", "fieldtype": "Link", "label": "Created By", "options": "User", "in_list_view": 1},
+  {"fieldname": "created_on", "fieldtype": "Datetime", "label": "Created On"},
+  {"fieldname": "sec_content", "fieldtype": "Section Break", "label": "Content"},
+  {"fieldname": "report_content", "fieldtype": "Long Text", "label": "Report / Answer (Markdown)"},
+  {"fieldname": "data_snapshot", "fieldtype": "Long Text", "label": "Data Snapshot (JSON)"},
+  {"fieldname": "dashboard_spec", "fieldtype": "Long Text", "label": "Dashboard Spec (JSON)"},
+  {"fieldname": "query_plan", "fieldtype": "Code", "label": "Query Plan (JSON)", "options": "JSON"}
+ ],
+ "modified": "2026-01-01 00:00:00",
+ "module": "Neotec AI",
+ "name": "Neotec Saved Report",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+  {"role": "All", "read": 1, "create": 1, "if_owner": 1, "write": 1, "delete": 1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,19 @@
+{
+ "actions": [],
+ "creation": "2026-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["document_type", "description"],
+ "fields": [
+  {"fieldname": "document_type", "fieldtype": "Link", "label": "DocType", "options": "DocType", "in_list_view": 1, "reqd": 1},
+  {"fieldname": "description", "fieldtype": "Data", "label": "Note", "in_list_view": 1}
+ ],
+ "istable": 1,
+ "modified": "2026-01-01 00:00:00",
+ "module": "Neotec AI",
+ "name": "Neotec Allowed DocType",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
